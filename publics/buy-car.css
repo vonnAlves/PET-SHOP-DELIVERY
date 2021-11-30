@@ -1,0 +1,90 @@
+.buy-car--area {
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  margin-top: 50px;
+}
+
+.buy-car--item--left {
+  flex: 1;
+}
+
+.buy-car--content--area {
+  border: 1px solid #dcdcdc;
+  margin-top: 20px;
+}
+.buy-car--item--content {
+  padding: 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.buy-car--item--content:last-child {
+  border-bottom: none;
+}
+
+.buy-car--content--flex {
+  display:flex;
+}
+.buy-car--content--img img {
+  width:60%;
+}
+.buy-car--content--clmn {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.buy-car--content--add--value {
+  display:flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  width: 50px;
+  height:fit-content;
+  margin-right: 1rem;
+  padding: 5px;
+  background-color: rebeccapurple;
+
+}
+
+
+.buy-car-right--area {
+  border: 1px solid #dcdcdc;
+  height: 250px;
+  margin-top: 44px;
+  margin-left: 10px;
+  max-width:250px;
+  padding: 30px;
+}
+.buy-car--right--tracking--title img {
+  width: 15px;
+}
+.buy-car--right--tracking--content {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buy-car--right--tracking--content p {
+  margin-top: 5px;
+}
+.buy-car--right--tracking--content--flex {
+  display:flex;
+  justify-content: space-between;
+}
+
+.resume-request--title {
+  margin: 10px 0 10px 0;
+}
+.resume-request--value--total {
+  margin: 10px 0 10px 0;
+}
+.btn-resume {
+  width:100%;
+}
+
+@media (max-width:720px) {
+  .buy-car--area  {
+    flex-direction: column;
+    align-items: center
+  }
+}

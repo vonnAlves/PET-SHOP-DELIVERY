@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/publics/css/reset.css">
+  <link rel="stylesheet" href="/publics/css/form-cadastro.css">
+  <link rel="stylesheet" href="/publics/css/stylesheet.css">
+  <link rel="stylesheet" href="/publics/css/confirm-buy.css">
+  <title>Pet-shop Delivery</title>
+</head>
+<body>
+
+  <header class="bg-form">
+    <div class="container">
+      <div class="header-area flex jst-between alg-center">
+        <div class="header-logo flex jst-between alg-center">
+          <img src="/publics/images/v987-11a-removebg-preview.png" alt="">
+          <div class="font-color txt-font--montserrat txt-weight--700 txt-uppercase txt-lg">
+            <span><a href="/index.html">Pet-Shop <br> Delivery</a></span>
+          </div>
+        </div>
+        <a href="/index.html"><h3>Home</h3></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="buy-confirm--area">
+    <div class="container">
+      <div class="buy-confirm--title txt-lg txt-font--montserrat txt-weight--700 font-color">
+        <h1>Confirmar compra</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex-clmn">
+        <div class="buy-confirm brd">
+          <div class="buy-confirm--title brd-btm txt-md txt-font--montserrat txt-weight--600 font-color">
+            <h2>Endereço</h2>
+          </div>
+          <form action="" method="post">
+            <div class="flex">
+              <input class="input input--item1" placeholder="Rua" type="text">
+              <input class="input input--item2" placeholder="Nr." type="number">
+            </div>
+            <div class="flex">
+              <input class="input input--item3" placeholder="bairro" type="text">
+              <input class="input input--item4" placeholder="CEP" type="number">
+            </div>
+            <input class="input input--item5" placeholder="Ponto de referencia" type="text">
+          </form>
+        </div>
+        <div class="buy-confirm brd">
+          <div class="buy-confirm--title brd-btm txt-md txt-font--montserrat txt-weight--600 font-color">
+            <h2>Formas de pagamento</h2>
+          </div>
+          <nav>
+            <div class="selection-payment">
+              <div class="selection-payment--type txt-md txt-font--montserrat txt-weight--600 font-color">
+                <ul>
+                  <a href=""><li>Cartão</li></a>
+                  <a href=""><li>Pix</li></a>
+                  <a href=""><li>Boleto</li></a>
+                </ul>
+              </div>
+            </div>
+            <form action="" method="post">
+              <div class="flex">
+                <input class="input input--item1" name="card" placeholder="Número cartão *" type="text">
+                <input class="input input--item2" name="cod" placeholder="CVV" type="number">
+              </div>
+              <input class="input input--item5" name="name_card" placeholder="Nome impresso no cartão *"type="text">
+              <div class="flex">
+                <input class="input input--item3" name="mounth_card" placeholder="Mês de validade *"type="text">
+                <input class="input input--item4" name="year_card" placeholder="Ano de validade *" type="number">
+              </div>
+              <a href="login.html"><button class="btn btn-confirm--buy txt-font--montserrat txt-weight--600 txt-sm bg-primary">finalizar Compra</button></a>
+            </form>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
