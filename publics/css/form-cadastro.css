@@ -1,10 +1,7 @@
 
-.header-title2 a{
-  color: rgb(80, 74, 74);
-}
 .header-area a {
   text-decoration: none;
-  color: rgb(80, 74, 74);
+  color: #4c4c4c;
 }
 
 .form-area {
@@ -17,53 +14,70 @@
 
 .form-item--right {
   width: 50%;
-  margin-left: 100px ;  
+  margin-left: 100px;  
 }
 .form-item--right form{
   display:flex;
   flex-direction: column;
-  width: 320px;
+  max-width: 320px;
   margin: auto;
-  margin-top: 50px;
 }
 .form-item--right--title {
   display: flex;
   justify-content: center;
-  width: 320px;
   margin-bottom: 10px;
   text-align: center;  
 }
 .form-item--right input {
-  height:30px;
   margin-top: 20px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.areainput {
-  display: flex;
-  justify-content: space-between;
 }
 .areainput input {
   width:140px;
-  height:30px;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .form-item--right h4 {
   margin-top: 10px;
-  color: rgb(65, 64, 64);
+}
+.form-item--right a  {
+  text-decoration: none;
+}
+.form-item--right h4:hover {
+  width:fit-content;
+  color: #478CBE;
 }
 .btn-form {
-  width: 100%;
-  height:40px;
-  margin-top: 30px;
+  margin: 20px 0 20px 0;
+  width: 100% !important;
 }
 .form-item--right h5 {
-  margin-top: 15px;
   text-align: center;
 }
 .form-item--right a {
   color:#478CBE;
 }
 
+@media (max-width:840px) {
+  .form-item--left {
+    display:none;
+  }
+  .form-area {
+    margin: auto;
+  }
+  .form-item--right {
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    width:100%;
+    margin: auto;
+    margin: 15px 0 15px 0;
+  }
+}
+@media (max-width:734px) {
+  .header-title2 a {
+    font-size: 1rem;
+  }
+}
+@media (max-width:387px) {
+  .areainput input{
+    width: 110px;
+  }
+}

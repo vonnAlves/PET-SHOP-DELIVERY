@@ -17,23 +17,29 @@
 <body>
   <header class="bg-form">
     <div class="container">
-      <div class="header-area">
-        <div class="header-logo">
+      <div class="header-area flex jst-between alg-center">
+        <div class="header-logo flex jst-between alg-center">
           <img src="/publics/images/v987-11a-removebg-preview.png" alt="">
-          <div class="header-title header-title2 txt-font--montserrat txt-weight--700 txt-uppercase txt-lg">
-            <span><a href="">Pet-Shop <br> Delivery</a></span>
+          <div class="font-color txt-font--montserrat txt-weight--700 txt-uppercase txt-lg">
+            <span><a href="/index.html">Pet-Shop <br> Delivery</a></span>
           </div>
         </div>
-        <a href="login.html"><h3>Home</h3></a>
+        <a href="/index.html"><h3>Home</h3></a>
       </div>
     </div>
   </header>
 
-  <section class="container category">
-    <div class="category-products txt-font--open-sans txt-weight--300 txt-sm bg-secondary">
+  <section>
+    <div class="buy-car">
+      <a href="/buy-car.html"><img src="/publics/images/1490129319-rounded09_82169.png" alt="carrinho de compras"></a> 
+    </div>
+  </section>
+ 
+  <section class="container jst-center">
+    <div class="category-products mg-tp--lg flex jst-around txt-font--open-sans txt-weight--300 txt-md bg-secondary">
       <nav class="category-products--sections">
         <ul>
-          <a href=""> <li>Gato </li></a> 
+          <a href=""><li>Gato</li></a> 
           <a href=""><li>Cachorro</li></a> 
           <a href=""> <li>Outros pets</li></a>
           <a href=""> <li>Marcas</li></a>
@@ -41,24 +47,23 @@
       </nav>
 
       <form action="" method="get">
-        <input type="search" name="buscaCategorias" id="" placeholder="O que o seu pet precisa?" >
-      </form>    
-
+        <input type="search" name="search_product" id="" class="input search-products" placeholder="O que o seu pet precisa?" >
+      </form>  
     </div>
   </section>
 
   <main>
     <div class="container">
       <div class="info-product--geral">
-        <div class="info-product--area">
+        <div class="info-product--area flex">
           <div class="info-product--img">
             <img src="/publics/images/2492303_FRENTE.jpg" alt="">
           </div>
           <div class="info-product--item">
             <div class="info-product--title">
-              <h4 class=" txt-font--montserrat txt-weight--600 txt-lg">Ração para cachorro</h4>
+              <h4 class=" txt-font--montserrat txt-weight--700 txt-lg font-color">Ração para cachorro</h4>
             </div>
-            <div class="info-product--rate"> 
+            <div class="info-product--rate flex jst-between font-color"> 
               <img src="/publics/images/estrelou.png" alt="">
               <h4>4.5/5.0</h4>
             </div>
@@ -69,33 +74,38 @@
                 <li>Lorem ipsum dolor sit amet</li>
               </ul>
             </div>
-            <div class="info-product--cod txt-font--open-sans txt-Open-sans-weight--300">
+            <div class="info-product--cod txt-font--open-sans txt-Open-sans-weight--400 font-color">
               <h4>Cód. 8585</h4>
             </div> 
           </div>   
         </div>
 
         <aside>
-          <div class="aside-item--right">
+          <div class="aside-item--right flex flex-clmn">
             <div class="aside-item">
-              <div class="aside-item--title">
+              <div class="aside-item--title txt-md txt-font--montserrat txt-weight--600 font-color2">
                 <h4>Escolha o tamanho:</h4>
               </div>
-              <div class="aside-item--size--flex">
-                <div class="aside-item--size--value">
-                  <h4>1kg</h4>
-                  <h4>58.90 R$</h4>
+              <div class="aside-item--size flex">
+                <div class="aside-item--size--value brd txt-font--montserrat">
+                  <a href="">
+                    <h4 class="font-color--primary txt-weight--600 txt-md">1kg</h4>
+                    <p class="txt-sm font-color">58.90R$</p>
+                  </a>
                 </div>
-                <div class="aside-item--size--value">
-                  <h4>1kg</h4>
-                  <h4>58.90 R$</h4>
-                </div>
+
+                <div class="aside-item--size--value brd txt-font--montserrat">
+                  <a href="">
+                    <h4 class="font-color--primary txt-weight--600 txt-md">1kg</h4>
+                    <p class="txt-sm font-color">58.90R$</p>
+                  </a>
+                </div>        
               </div>
               <div class="widget"></div>
             </div>
            
             <div class="aside-item">
-              <div class="aside-item--title">
+              <div class="aside-item--title txt-font--montserrat txt-weight--600 font-color txt-sm">
                 <h4>Compre agora mesmo</h4>
               </div>
               <div class="aside-item--price txt-lg txt-font--montserrat txt-weight--600">
@@ -107,122 +117,114 @@
 
             <div class="aside-item">
               <div class="address">
-                <h3>Entregar em:</h3>
+                <h3 class="txt-font--montserrat txt-weight--600 font-color2 txt-md">Entregar em:</h3>
                 <form action="/cep" method="get" class="">
-                  <input type="number" placeholder="digite seu cep">
+                  <input type="number" class="input" placeholder="digite seu cep">
                 </form>
               </div>
               <div class="widget"></div>
             </div>
 
-            <div class="aside-item--frete">
+            <div class="aside-item--frete txt-font--montserrat txt-weight--600 font-color txt-sm">
               <h4>Frete gratis nas compras acima de 100R$</h4>
               <p>Receba em ate 2h em toda região de manaus</p>
             </div>
           </div>
+
         </aside>
 
         <section>
           <section class="info-products-relatives">
             <div class="info-products-relative--title">
-              <h4 class="txt-lg">Itens semelhantes a este</h4>
+              <h4 class="txt-lg txt-font--montserrat txt-weight--600 font-color">Itens semelhantes a este</h4>
             </div>
             <div class="show-offer--area">        
-              <div class="show-offer--item">
+              <div class="show-offer--item brd">
                 <div class="show-offer--img"> <img src="/publics/images/2492303_FRENTE.jpg" alt=""> </div>
-                <div class="show-offer--title txt-font--open-sans txt-md">
+                <div class="show-offer--title txt-font--open-sans txt-md font-color">
                   <h4>Ração para cachorro</h4>
                 </div>
-                <div class="show-offer--subtitle txt-font--open-sans txt-Open-sans-weight--300 txt-sm">
+                <div class="show-offer--subtitle flex jst-between txt-font--open-sans txt-Open-sans-weight--300 txt-sm font-color2">
                   <h4>lorem ipsum</h4>
-                  <div class="show-offer--rate"> <img src="/publics/images/estrelou.png" alt="">
+                  <div class="show-offer--rate flex">
+                    <img src="/publics/images/estrelou.png" alt="">
                     <h4>4.5/5.0</h4>
                   </div>
                 </div>
-                <div class="show-offer--area-priece_add">
-                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-sm">
+                <div class="show-offer--area-priece_add flex">
+                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-md font-color--primary">
                     <h4>R$ 58.90</h4>
                   </div>
-                  <div class = "show-offer--add txt-font--open-sans txt-Open-sans-weight--400 txt-sm bg-primary"> 
-                    <img src="/publics/images/carrinho-de-compras (2).png" alt="carrinho de compras">
-                    <a href=""><h4>+Add</h4></a>
-                  </div>  
-                </div>
-              </div>
-              
-              <div class="show-offer--item">
-                <div class="show-offer--img"> <img src="/publics/images/2492303_FRENTE.jpg" alt=""> </div>
-                <div class="show-offer--title txt-font--open-sans txt-md">
-                  <h4>Ração para cachorro</h4>
-                </div>
-                <div class="show-offer--subtitle txt-font--open-sans txt-Open-sans-weight--300 txt-sm">
-                  <h4>lorem ipsum</h4>
-                  <div class="show-offer--rate"> <img src="/publics/images/estrelou.png" alt="">
-                    <h4>4.5/5.0</h4>
-                  </div>
-                </div>
-                <div class="show-offer--area-priece_add">
-                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-sm">
-                    <h4>R$ 58.90</h4>
-                  </div>
-                  <div class = "show-offer--add txt-font--open-sans txt-Open-sans-weight--400 txt-sm bg-primary"> 
-                    <img src="/publics/images/carrinho-de-compras (2).png" alt="carrinho de compras">
-                    <a href=""><h4>+Add</h4></a>
-                  </div>  
                 </div>
               </div>
 
-              <div class="show-offer--item">
+              <div class="show-offer--item brd">
                 <div class="show-offer--img"> <img src="/publics/images/2492303_FRENTE.jpg" alt=""> </div>
-                <div class="show-offer--title txt-font--open-sans txt-md">
+                <div class="show-offer--title txt-font--open-sans txt-md font-color">
                   <h4>Ração para cachorro</h4>
                 </div>
-                <div class="show-offer--subtitle txt-font--open-sans txt-Open-sans-weight--300 txt-sm">
+                <div class="show-offer--subtitle flex jst-between txt-font--open-sans txt-Open-sans-weight--300 txt-sm font-color2">
                   <h4>lorem ipsum</h4>
-                  <div class="show-offer--rate"> <img src="/publics/images/estrelou.png" alt="">
+                  <div class="show-offer--rate flex">
+                    <img src="/publics/images/estrelou.png" alt="">
                     <h4>4.5/5.0</h4>
                   </div>
                 </div>
-                <div class="show-offer--area-priece_add">
-                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-sm">
+                <div class="show-offer--area-priece_add flex">
+                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-md font-color--primary">
                     <h4>R$ 58.90</h4>
                   </div>
-                  <div class = "show-offer--add txt-font--open-sans txt-Open-sans-weight--400 txt-sm bg-primary"> 
-                    <img src="/publics/images/carrinho-de-compras (2).png" alt="carrinho de compras">
-                    <a href=""><h4>+Add</h4></a>
-                  </div>  
                 </div>
               </div>
-            </div>
+
+              <div class="show-offer--item brd">
+                <div class="show-offer--img"> <img src="/publics/images/2492303_FRENTE.jpg" alt=""> </div>
+                <div class="show-offer--title txt-font--open-sans txt-md font-color">
+                  <h4>Ração para cachorro</h4>
+                </div>
+                <div class="show-offer--subtitle flex jst-between txt-font--open-sans txt-Open-sans-weight--300 txt-sm font-color2">
+                  <h4>lorem ipsum</h4>
+                  <div class="show-offer--rate flex">
+                    <img src="/publics/images/estrelou.png" alt="">
+                    <h4>4.5/5.0</h4>
+                  </div>
+                </div>
+                <div class="show-offer--area-priece_add flex">
+                  <div class="show-offer--price txt-font--open-sans txt-Open-sans-weight--400 txt-md font-color--primary">
+                    <h4>R$ 58.90</h4>
+                  </div>
+                </div>
+              </div>
           </section>
           
           <div class="widget widget2"></div>
+
           <section>
-            <div class="details-product--title txt-lg txt-montserrat">
+            <div class="details-product--title txt-lg txt-montserrat txt-weight--600 font-color">
               <h2>Detalhes do produto</h2>
             </div>
-            <div class="details-products">
+            <div class="details-products txt-font--opens-sans txt-Open-sans-weight--400 font-color2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, vel aspernatur exercitationem voluptas optio similique enim dolores in. A sit repellat dignissimos recusandae hic tenetur praesentium distinctio, aliquam in totam.
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquam quibusdam sed eos accusantium harum cumque officiis numquam minus soluta itaque deleniti adipisci, dolor nostrum temporibus ex doloribus culpa libero!
             </div>
           </section>
-
           <div class="widget widget2"></div>
+
           <section>
-            <div class="rating-product--title txt-lg txt-montserrat">
+            <div class="rating-product--title txt-lg txt-montserrat txt-weight--600 font-color">
               <h2>Avaliação de clientes</h2>
             </div>
-            <div class="rating-product--flex">
+            <div class="rating-product flex jst-between alg-center">
               <div class="rating-product--value">
-                <h3 class="txt-lg txt-font--montserrat txt-weight--600">4.5</h3>
-                <p class="txt-sm txt-font--open-sans txt-Open-sans-weight--300">50 avaliações</p>
+                <h3 class="txt-lg txt-font--montserrat txt-weight--600 font-color--primary">4.5</h3>
+                <p class="txt-sm txt-font--open-sans txt-Open-sans-weight--300 font-color2">50 avaliações</p>
               </div>
               <div class="rating-product--value">
-                <h3 class="txt-lg txt-font--montserrat">96%</h3>
-                <p class="txt-sm txt-font--open-sans txt-Open-sans-weight--300">dos clientes recomendam</p>
+                <h3 class="txt-lg txt-font--montserrat font-color--primary">96%</h3>
+                <p class="txt-sm txt-font--open-sans txt-Open-sans-weight--300 font-color2">dos clientes recomendam</p>
               </div>
               <div class="rating-product--value">
-                <a href="login.html"><button class="btn btn-rating txt-font--montserrat txt-weight--600 txt-md bg-primary">Avaliar este produto</button></a>
+                <a href="#rating-post"><button class="btn btn-rating txt-font--montserrat txt-weight--600 txt-sm">Avaliar este produto</button></a>
               </div>
             </div> 
           </section>
@@ -230,84 +232,82 @@
           <section>
             <div class="product-rating-comments">
               <div class="rating-type">
-                <h2 class="txt-sm">Muito bom</h2>
+                <h2 class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">Muito bom</h2>
               </div>
-              <div class="rating-username--date_posted_at">
+              <div class="rating-username--date_posted_at txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h2>por vonnAlves em 24/11/2021</h2>
               </div>
-              <div class="rating-title">
+              <div class="rating-title txt-md txt-font--montserrat txt-weight--600 font-color">
                 <h3>Lorem</h3>
               </div>
-              <div class="rating-desc">
+              <div class="rating-desc txt-md txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h3>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit. Consequuntur cumque illum, temporibus atque perferendis illo optio ducimus et necessitatibus, ea tempora sint suscipit id labore magnam odio mollitia?
                 </h3>
               </div>
             </div>
-
             <div class="product-rating-comments">
               <div class="rating-type">
-                <h2 class="txt-sm">Muito bom</h2>
+                <h2 class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">Muito bom</h2>
               </div>
-              <div class="rating-username--date_posted_at">
+              <div class="rating-username--date_posted_at txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h2>por vonnAlves em 24/11/2021</h2>
               </div>
-              <div class="rating-title">
+              <div class="rating-title txt-md txt-font--montserrat txt-weight--600 font-color">
                 <h3>Lorem</h3>
               </div>
-              <div class="rating-desc">
+              <div class="rating-desc txt-md txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h3>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit. Consequuntur cumque illum, temporibus atque perferendis illo optio ducimus et necessitatibus, ea tempora sint suscipit id labore magnam odio mollitia?
                 </h3>
               </div>
             </div>
-
             <div class="product-rating-comments">
               <div class="rating-type">
-                <h2 class="txt-sm">Muito bom</h2>
+                <h2 class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">Muito bom</h2>
               </div>
-              <div class="rating-username--date_posted_at">
+              <div class="rating-username--date_posted_at txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h2>por vonnAlves em 24/11/2021</h2>
               </div>
-              <div class="rating-title">
+              <div class="rating-title txt-md txt-font--montserrat txt-weight--600 font-color">
                 <h3>Lorem</h3>
               </div>
-              <div class="rating-desc">
+              <div class="rating-desc txt-md txt-font--open-sans txt-Open-sans-weight--400 font-color">
                 <h3>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, suscipit. Consequuntur cumque illum, temporibus atque perferendis illo optio ducimus et necessitatibus, ea tempora sint suscipit id labore magnam odio mollitia?
                 </h3>
               </div>
             </div>
           </section>
-
-          <section class="rating-post">
-            <form action="get">
-                <p>Como voce avalia este produto?</p>
+        
+          <section id="rating-post">
+            <form action="" method="post">
+              <p class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color">Como voce avalia este produto?</p>
               <div>
                 <input type="radio" id="rating1" name="rating" value="otimo">
-                <label for="rating1">otimo</label>
+                <label class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color" for="rating1">otimo</label>
   
                 <input type="radio" id="rating2" name="rating" value="bom">
-                <label for="rating2">bom</label>
+                <label class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color" for="rating2">bom</label>
   
                 <input type="radio" id="rating3" name="rating" value="regular">
-                <label for="rating3">regular</label>
+                <label class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color" for="rating3">regular</label>
 
                 <input type="radio" id="rating4" name="rating" value="ruim">
-                <label for="rating4">ruim</label>
+                <label class="txt-sm txt-font--open-sans txt-Open-sans-weight--400 font-color" for="rating4">ruim</label>
 
                 <div class="areainput">
-                  <input type="text" name="name" id="name" placeholder="Digite o titulo da avaliação">
-                  <input type="text" name="comment" id="comment" placeholder="Digite o seu comentario">
-                  <input type="text" name="pros" id="pros" placeholder="Prós">
-                  <input type="text" name="contras" id="contras" placeholder="Contras">
+                  <input type="text" name="title" id="title" class="input" placeholder="Digite o titulo da avaliação">
+                  <textarea name="comment" id="comment" cols="30" rows="10" maxlength="400" class="input" placeholder="Digite o seu comentário"></textarea>
+                  <input type="text" name="pros" id="pros" class="input" placeholder="Prós">
+                  <input type="text" name="contras" id="contras" class="input" placeholder="Contras">
                 </div> 
-    
               </div>
               <button type="submit" class="btn btn-form txt-font--montserrat txt-weight--600 txt-md bg-primary">Enviar</button>
             </form>
           </section>
-        </section>    
+        </section>  
+      </div>
     </div>
   </main>
 

@@ -4,16 +4,12 @@
  margin:auto;
  margin-top: 50px; 
 }
-.info-product--area {
-  display:flex;
-}
+
 .info-product--img img {
-  width: 200px;
+  width: 100%;
 }
 
 .info-product--rate{
-  display:flex;
-  justify-content:space-between;
   margin-top: 5px;
 }
 .info-product--rate img {
@@ -31,21 +27,19 @@
 }
 
 .aside-item--right {
-  display:flex;
-  flex-direction: column;
   margin-left: 90px;
 }
 .aside-item--title {
   margin-bottom: 10px;
 }
-.aside-item--size--flex {
-  display:flex;
-}
 .aside-item--size--value {
-  background-color: #99A6B0;
-  padding: 8px;
+  padding: 10px;
+  cursor: pointer;
   border-radius: 5px;
   margin-left: 10px;
+}
+.aside-item--size--value a{
+  text-decoration:none;
 }
 .aside-item--size--value:nth-child(1) {
   margin-left: 0;
@@ -66,7 +60,6 @@
 }
 .btn-buy {
   width: 50%;
-  height:40px;
   background-color: #95B59F
 }
 .btn-buy:hover {
@@ -77,10 +70,7 @@
   margin-bottom: 8px;
 }
 .address input {
-  height:30px;
-  border-radius: 5px;
-  border: 1px solid rgba(0,0,0,0.5);
-  outline: 0;
+  max-width: 150px;
 }
 
 .aside-item p {
@@ -88,7 +78,7 @@
 }
 
 .info-products-relative--title {
-  margin-top: -120px;
+  margin-top: -100px;
 }
 .show-offer--area {
   justify-content:flex-start;
@@ -116,14 +106,8 @@
 .rating-product--value h3{
   margin: 20px 0px 5px 0px;
 }
-.rating-product--flex {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .btn-rating {
   width: 100%;
-  height: 40px;
   background-color: #95B59F;
 }
 .btn-rating:hover {
@@ -131,16 +115,13 @@
 }
 
 .product-rating-comments {
-  margin-top: 50px;
+  margin-top: 40px;
 }
-.rating-type h2 {
-  font-size: 0.8rem;
-}
-.rating-username--date_posted_at {
-  margin-bottom: 10px;
+.rating-title h3 {
+  margin: 10px 0px 5px 0;
 }
 
-.rating-post {
+#rating-post {
   margin-top: 50px;
 }
 .rating-post input[type='radio']{
@@ -156,5 +137,30 @@
 }
 #comment {
   height: 100px;
+  resize: none;
+  margin-top: 15px;
+  width: 100%;
 }
 
+@media (max-width:590px) {
+  .info-product--title h4{
+    font-size: 1rem;
+  }
+.info-product--geral {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    margin-top: 30px;
+  }
+  .info-products-relative--title {
+    margin-top: 50px;
+  }
+}
+@media (max-width:400px) {
+  .rating-product--value {
+    margin-left: 10px;
+  }
+  .rating-product--value:nth-child(1) {
+    margin-left: 0;
+  }
+}
